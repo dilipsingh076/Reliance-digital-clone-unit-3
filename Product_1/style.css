@@ -1,0 +1,214 @@
+#container{
+    width:100%;
+height: 800px;
+display: grid;
+grid-template-columns: 20% 80%;
+border: 1px solid brown;
+gap: 5px;
+}
+#left{
+    height: 65%;
+    width: 100%;
+    border: 1px solid red;
+    /* background-color: brown; */
+}
+#left{
+width: 100%;
+    display: grid;
+    grid-template-rows: 15% 40% 15% 15% 15%;; 
+}
+/* #left>div{
+    border:3px solid orange
+} */
+#second{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(0, 255, 21);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* background-color: aqua; */
+    gap: 15px;
+}
+.card{
+    /* border: 2px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 40% 50%;
+    justify-content: space-between;
+
+row-gap: 10%;    /* height: 230px; */
+    /* background-color: chartreuse; */
+}
+#dr{
+    /* height: 100%; */
+    width: 100%;
+    border: 1px solid rgb(0, 255, 21);
+    display: flex;
+    justify-content: space-between;
+    margin-top: -4px;
+}
+#price{
+    width: 100%;
+    border: 1px solid rgb(0, 255, 21);
+    background-color: brown;
+    
+}
+#range{
+    width: 100%;
+    /* height: 100%; */
+    border: 1px solid rgb(0, 255, 21);
+    margin-bottom: -23px;
+}
+.aprice{
+    /* this is the div that contain all the price and the range of the product */
+    margin-top: -15px;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.discount{
+    color: green;
+}
+.mrp{
+    text-decoration: line-through;
+}
+.name{
+    /* margin-top: -19px; */
+    padding-left: 15px;
+}
+.imgdiv{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid rgb(0, 255, 21); */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.buttom{
+    width: 100%;
+    height: 100%;
+   /* background-color: chocolate; */
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.offer{
+display: flex;
+margin-left: 5px;
+/* justify-content: space-around; */
+
+}
+p{
+font-size: 12px;
+/* margin: 5px; */
+border: 1px solid green;
+border-radius: 20%;
+margin-left: 5px;
+background-color: greenyellow;
+padding: 5px;
+}
+.offertext{
+    display: inline;
+}
+.wishlist{
+    height: 25px;
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: 50% 50%;
+    /* margin-top: -10px; */
+    /* background-color: blueviolet; */
+}
+
+#logo{
+    height: 22px;
+width: 22px;
+
+}
+.comparediv{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    /* background-color: chocolate; */
+    text-align: center;
+}
+.wishlistdiv{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:  20% 80%;
+    border: 1px solid black;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    /* background-color: cornflowerblue; */
+
+}
+.logo{
+    height:60%;
+    width: 80%;
+    margin-left: 14px;
+}
+.image{
+    height: 100%;
+}
+#right{
+    display: block;
+}
+
+/* ------------------------------------------------- */
+/* upper section */
+/* #first{
+    /* background-color: chartreuse; */
+/* } */ */
+#firstone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: coral; */
+    border: 1px solid teal;
+}
+#rightresultleft{
+/* background-color: cornsilk; */
+border: 1px black solid;
+padding: 5px;
+text-decoration: none;
+}
+#rightresult{
+    display:flex;
+    margin-right: 5px;
+}
+#select{
+    border: 0px;
+}
+#first2{
+    display:flex;
+    border: 1px solid brown;
+    margin-bottom: 15px;
+    margin-top: 4px;
+
+}
+#first2>div{
+    display: flex;
+    align-items: center;
+    border: 1px solid brown;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 25px;
+}
+/* #apple>h4{ */
+    /* border: 1px solid gray; */
+    /* margin-top: -7px; */
+    /* height: 15px; */
+/* } */
+#clear{
+    /* border:0px; */
+    background-color: rgb(18, 222, 222);
+}
