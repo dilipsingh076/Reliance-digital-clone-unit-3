@@ -2,7 +2,7 @@ function footerPart() {
     return `<footer><div id="footer">
     <div id="footer-left-div">
         <div id="title_name">
-            <h3>PRODUCT CATEGORIES</h3>
+            <h3 id="title_name">PRODUCT CATEGORIES</h3>
         </div>
         <div id="list">
             <ul>
@@ -28,7 +28,7 @@ function footerPart() {
         <div id="middle-1">
             <div>
                 <div id="title_name">
-                    <h3>SITE INFO</h3>
+                    <h3 id="title_name">SITE INFO</h3>
                 </div>
                 <div id="list">
                     <ul>
@@ -45,7 +45,7 @@ function footerPart() {
             </div>
             <div>
                 <div id="title_name">
-                    <h3>RESOURCE CENTER</h3>
+                    <h3 id="title_name">RESOURCE CENTER</h3>
                 </div>
                 <div id="list">
                     <ul>
@@ -69,7 +69,7 @@ function footerPart() {
     </div>
     <div id="footer-right-div">
         <div id="title_name">
-            <h3>POLICIES</h3>
+            <h3 id="title_name">POLICIES</h3>
         </div>
         <div id="list">
             <ul>

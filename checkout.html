@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>checkout form</title>
 	<link rel="stylesheet" type="text/css" href="checkout.css">
+	<link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
-	<header>
 		<div class="container">
 			<div class="left">
 				<h3>BILLING ADDRESS</h3>
@@ -75,10 +75,15 @@
 				</form>
 			</div>
 		</div>
-	</header>
 
-
+		<div class="footer"></div>
 </body>
 
 </html>
 <script src="checkout.js"></script>
+<script type="module">
+	import footerPart from "./footer.js";
+    console.log(footerPart);
+    document.querySelector(".footer").innerHTML = footerPart()
+</script>
+
