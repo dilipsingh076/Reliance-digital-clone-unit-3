@@ -138,7 +138,7 @@
    
 
     document.querySelector("button").addEventListener("click",login);
-    var regduser=JSON.parse(localStorage.getItem("userdatabase"));
+    var khatarnak=JSON.parse(localStorage.getItem("userdatabase"));
     
     function login(){
         var email=document.querySelector("#email").value;
@@ -146,8 +146,8 @@
         var password=document.querySelector("#password").value;
 
         let user_found=false;
-        for(var i=0;i<regduser.length;i++){
-            if(regduser[i].emailId===email && regduser[i].pass===password){
+        for(var i=0;i<khatarnak.length;i++){
+            if(khatarnak[i].emailId===email && khatarnak[i].pass===password){
                 user_found=true;
                
 
