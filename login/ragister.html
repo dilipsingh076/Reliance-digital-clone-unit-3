@@ -78,9 +78,9 @@
           <br><br>
           <input type="text" placeholder="Email Address*" id="email">
           <br><br>
-          <input type="text" placeholder="Password*" id="password">
+          <input type="password" placeholder="Password*" id="password">
           <br><br>
-          <input type="text" placeholder="Confirm Password*" id="confirmpassword">
+          <input type="password" placeholder="Confirm Password*" id="confirmpassword">
           <br><br>
           <input type="Number" placeholder="Mobile No*" id="mobile">
        </form>
@@ -100,15 +100,7 @@
 </html>
 <script type="Module">
 //import function
-import navbar from "../components/navbar.js"
-  let nav = navbar()
-  document.querySelector("#navbar").innerHTML =nav
-  
-  import footer from "../components/footer.js"
-  document.querySelector("#foot").innerHTML = footer
-
-
-  document.querySelector("button").addEventListener("click",register);
+document.querySelector("button").addEventListener("click",register);
     var userdata=JSON.parse(localStorage.getItem("userdatabase"))||[];
 
   function register(){
@@ -129,9 +121,8 @@ import navbar from "../components/navbar.js"
       };
 
       userdata.push(usercred);
-      localStorage.setItem("userdatabase",JSON.stringify(userdata));
+      localStorage.setItem("userdatabase",JSON.stringify(usercred));
       window.location.href="login.html";
-      
 
   }
 </script>

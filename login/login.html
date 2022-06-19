@@ -98,6 +98,7 @@
     </div>
     
     <div id="cont">
+        
     <p class="login">Login</p>
     <hr>
     <div id=main>
@@ -115,7 +116,7 @@
         <p>Forgot password?</p>
     </div>
     
-    <button>Continue</button>
+    <button id="button">Continue</button>
     <div id="char">
         <p>Don't have an account yet?</p>
         <a href="ragister.html" class="reg"><p>REGISTER</p></a>
@@ -138,41 +139,46 @@
 </body>
 </html>
 <script type="module">
-    //import function
-import navbar from "../components/navbar.js"
-  let nav = navbar()
-  document.querySelector("#navbar").innerHTML =nav
-
-  import footer from "../components/footer.js"
-  document.querySelector("#foot").innerHTML = footer
+    import  navbar from "../components/navbar.js"
+    let nav = navbar()
+    document.querySelector("#navbar").innerHTML = nav
    
 
-    document.querySelector("button").addEventListener("click",login);
-    var regduser=JSON.parse(localStorage.getItem("userdatabase"));
+    document.querySelector("#button").addEventListener("click",login);
+    var khatarnak=JSON.parse(localStorage.getItem("userdatabase"));
     
     function login(){
+        console.log(khatarnak);
+        console.log("rupesh")
         var email=document.querySelector("#email").value;
 
         var password=document.querySelector("#password").value;
 
         let user_found=false;
-        for(var i=0;i<regduser.length;i++){
-            if(regduser[i].emailId===email && regduser[i].pass===password){
+        // for(var i=0;i<khatarnak.length;i++){
+            // console.log(khatarnak[i].email);
+            if(khatarnak.emailId===email &&khatarnak.pass===password){
                 user_found=true;
                
 
-            }
+            // }
         }
         if(user_found){
 
-        alert("Login Successful");
-        // window.location.href=""
+        alert("Login Successful Go to Home Page");
+        // window.location.href="../index.html";
+        let p=document.querySelector(".login")
+        p.addEventListener("click",function(){
+           p.innerHTML=""
+           p.innerHTML="Logout"
+        })
         }
         else{
-            alert("wrong credientials")
+            alert("Login Failed");
         }
         
-    }
-    
+       
+        }
+       
 
 </script>
