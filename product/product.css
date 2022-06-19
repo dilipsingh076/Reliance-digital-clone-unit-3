@@ -2,8 +2,11 @@ body {
     margin: 0;
     font-family: 'Roboto';
     background-color: #FFFFFF;
+    
   }
-  
+  #main{
+    border: 1px solid black;
+  }
   /* section name bar code starts  */
   #sectionNameBar {
     display: flex;
@@ -33,13 +36,14 @@ body {
   /* code for Mobile details box starts  */
   #mobDetailsBox{
       display: flex;
-      border: none;
+      border: 2px solid red;
       border-bottom: 1px solid rgba(175, 172, 172, 0.493);
       height: 800px;
+      
   }
   #mobileImages{
       border: 1px solid white;
-      width: 830px;
+      width: 30%;
       height: 660px;
       padding: 0px 15px;
   }
@@ -51,7 +55,7 @@ body {
   #myimage{
     /* border: 1px solid black; */
       height: 90%;
-      width: 80%;
+      width: 98%;
   }
   .smallimgDiv{
       border: 1px solid white;
@@ -193,11 +197,13 @@ body {
         margin-left: 25px;
         letter-spacing: 1px;
         cursor: pointer;
+        color: black;
     }
-    #bar{
+    .bar{
         margin-left: 5px;
         margin-right: 8px;
         font-size: 18px;
+        color: black;
     }
     .share{
         color: #337AB7;
@@ -218,11 +224,16 @@ body {
     #gainMore{
         font-size: 18px;
         font-weight: bold;
+        color: black;
     }
     #offers{
-        color: #585757;
+        color: #040404;
         word-spacing: 2px;
         line-height: 28px;
+        /* background-color: aquamarine; */
+    }
+    #offers >li{
+      color: black;
     }
     #tc{
       color: #337AB7;
@@ -244,6 +255,7 @@ body {
     #saveMore{
         font-size: 18px;
         font-weight: bold;
+        color: black;
     }
     #svtc{
       color: #337AB7;
@@ -259,6 +271,9 @@ body {
       word-spacing: 2px;
       line-height: 28px;
       width: 580px;
+    }
+    #payOffers>li{
+      color: black;
     }
     #viewPlans{
       color: #337AB7;
@@ -285,15 +300,21 @@ body {
     }
     #mrpDiv{
         border: 1px solid white;
-        width: 547px;
+        width: 40%;
         padding-left: 25px ;
         border-left:1px solid #ddd;
         margin-left: 40px;
+    }
+    #mrpDiv>p{
+      color: black;
     }
     #price{
         color: #1F4985;
         font-weight: bolder;
         font-size: 26px;
+    }
+    #price>span{
+      color: gray;
     }
     #EMIs{
         font-size: 15px;
