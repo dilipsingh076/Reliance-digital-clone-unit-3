@@ -1046,4 +1046,29 @@ a{
   import footer from "../components/footer.js"
   document.querySelector("#foot").innerHTML = footer
 
+
+  function openImg(){
+    var image = document.getElementById('getsrc');
+    var source = image.src;
+    window.open(source);
+}
+
+
+document.getElementById("buyNow").addEventListener("click", function() {
+    
+    let pin = document.querySelector("#pinCode").value
+    
+    
+    if(pin.length === 6){
+      let pincheck = document.getElementById('pinalert')
+      pincheck.style.display = 'none'
+      window.location.href = "cart.html"
+    }
+    else{
+      let pincheck = document.getElementById('pinalert')
+      pincheck.style.display = 'block'
+      
+    }
+  });
+
 </script>
