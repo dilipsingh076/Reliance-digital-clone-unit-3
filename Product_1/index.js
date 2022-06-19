@@ -168,5 +168,10 @@ data.forEach(el => {
     buttom.append(name, priceofferdiv)
     card.append(img, buttom)
     second.append(card)
+    card.addEventListener("click", cart)
 
 })
+function cart(e) {
+    console.log("it is working")
+    window.location.href = "../product/product.html"
+}

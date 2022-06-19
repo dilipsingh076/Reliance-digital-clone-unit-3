@@ -21,7 +21,7 @@ width: 100%;
     border:3px solid orange
 } */
 #second{
-    height: 100%;
+    height: auto;
     width: 100%;
     border: 1px solid rgb(0, 255, 21);
     display: grid;
@@ -43,7 +43,7 @@ row-gap: 10%;    /* height: 230px; */
 #dr{
     /* height: 100%; */
     width: 100%;
-    border: 1px solid rgb(0, 255, 21);
+    border: 1px solid rgb(223, 128, 13);
     display: flex;
     justify-content: space-between;
     margin-top: -4px;
