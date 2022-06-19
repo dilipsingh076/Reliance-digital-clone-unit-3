@@ -14,7 +14,7 @@ height: 100px;
 #navservice{
 /* border: 1px dashed brown; */
 display: flex;
-height: 30%;
+height:50%;
 justify-content: flex-end;
 grid-gap: 20px;
 margin-top: 0;
@@ -34,6 +34,8 @@ text-align: center;
 padding: 8px 0 8px 0;
 line-height: 20px;
 font-size: 14px;
+font-family: sans-serif;
+font-weight: bold;
 cursor: pointer;
 }
 /* navbar upper item end */
@@ -42,7 +44,7 @@ cursor: pointer;
 /* nav header start */
 #navheader{
 /* border: 1px dashed brown; */
-height: 60%;
+height: 52%;
 display: flex;
 margin-top: -16px;
 justify-content: space-between;
@@ -51,13 +53,9 @@ background-color: #e42529;
 
 
 
-}
-.locationlogo{
-border: 1px solid black;
-margin-right: 12px;
-height:20px;
 
 }
+
 #logo_image_div{
 /* border: 1px solid purple; */
 width: 23%;
@@ -67,7 +65,8 @@ margin-left: 20px;
 }
 #logo_image{
 /* border: 1px solid blue; */
-height: 70%;
+height: 90%;
+width: 100%;
 
 }
 #searchpng{
@@ -107,14 +106,22 @@ margin-left: -4px;
 
 }
 .navheader_right_div{
+
+/* border: 1px solid black; */
 border-right: 1px solid white;
 height: 30%;
 background-color: #e42529;
 color: white;
-margin: auto;
+margin-top: 8px;
+
+font-family: sans-serif;
+font-weight: bold;
 padding: 8px;
 
 
+}
+.navheader_right_div>p{
+    margin-top: -5px;
 }
 
 /* blue navbar */
@@ -122,12 +129,17 @@ padding: 8px;
 border: 1px solid black;
 height: 40px;
 width: 100%;
-margin-top: -11px;
+margin-top: 1.5px;
 background-color: #1f4985;
 display: flex;
 justify-content: space-between;
+position: absolute;
 
 
+
+}
+a{
+    text-decoration: none;
 }
 #blue_navbar> select{
 
@@ -138,6 +150,7 @@ background-color: #1f4985;
 cursor: pointer;
 border: none;
 color: white;
+
 
 }
 option{

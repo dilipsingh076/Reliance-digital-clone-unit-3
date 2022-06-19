@@ -6,8 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../style/navbar/navbar.css">
+  <link rel="stylesheet" href="../style/footer/footer.css">
+  
 </head>
 <body>
+  <div id="navbar">
+
+  </div>
   <main class="container">
     <!-- div1 contains only a image -->
     <div class="div1">
@@ -54,10 +60,11 @@
     <!-- div6 contains 4 grid images only -->
     <div class="div6">
       <div class="grid">
-        <img
+        <a href="../Product_1/index.html"><img
           src="https://www.reliancedigital.in/medias/iPhone-12-05.jpg?context=bWFzdGVyfGltYWdlc3w0NDc2OHxpbWFnZS9qcGVnfGltYWdlcy9oNmMvaDBmLzk4Mzc4NTYwNjM1MTguanBnfGRkNTFhZGRmYjAyMjMzMTBiZDkxNTljZDM1NDJhMDcwOGJhY2UxNTc5ZGY0YmIxMWI0ZWZhY2M5YWNhNjAxNTY"
           alt=""
-        />
+        /></a>
+        
         <img
           src="https://www.reliancedigital.in/medias/Best-Deals-on-Frost-Free-Refrigerators.jpg?context=bWFzdGVyfGltYWdlc3w0NDU3NnxpbWFnZS9qcGVnfGltYWdlcy9oNWYvaGQzLzk4Mzc5NTUzNTA1NTguanBnfGNhN2MyZGNlYzFkYTk4YTcxNzEyYmM0M2YxODg4ODA3MjFmMTdhYmE5ZDE2YTg5MjNhZGZkMzU1NDA1ZGUyZTU"
           alt=""
@@ -589,6 +596,17 @@
       </div>
     </div>
   </main>
+  <div id="foot"></div>
 </body>
 <script src="index.js"></script>
+<script type="module">
+  import navbar from "../components/navbar.js"
+let nav = navbar()
+document.querySelector("#navbar").innerHTML =nav
+
+import footer from "../components/footer.js"
+document.querySelector("#foot").innerHTML = footer()
+
+</script>
+
 </html>
