@@ -3,6 +3,7 @@
 height: auto;
 display: grid;
 grid-template-columns: 20% 80%;
+margin-top: 34px;
 /* border: 1px solid brown; */
 gap: 5px;
 }
@@ -30,7 +31,7 @@ width: 100%;
     gap: 15px;
 }
 .card{
-    /* border: 2px solid black; */
+    border: 1px solid rgb(95, 95, 95);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 5px;
     display: grid;
@@ -50,14 +51,14 @@ row-gap: 10%;    /* height: 230px; */
 }
 #price{
     width: 100%;
-    /* border: 1px solid rgb(0, 255, 21); */
+    border: 1px solid rgb(148, 148, 148);
     /* background-color: brown; */
     
 }
 #range{
     width: 100%;
     /* height: 100%; */
-    /* border: 1px solid rgb(0, 255, 21); */
+    border: 1px solid rgb(0, 255, 21);
     margin-bottom: -23px;
 }
 .aprice{
@@ -134,7 +135,7 @@ width: 22px;
     grid-template-columns: 20% 80%;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     /* background-color: chocolate; */
     text-align: center;
 }
@@ -143,7 +144,7 @@ width: 22px;
     width: 100%;
     display: grid;
     grid-template-columns:  20% 80%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     align-items: center;
     /* justify-content: center; */
     text-align: center;
@@ -171,25 +172,31 @@ width: 22px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: coral; */
+    /* background-color: rgb(252, 75, 11); */
     /* border: 1px solid teal; */
 }
+#resultcount{
+    /* font-size: 22px; */
+    display: inline;
+}
 #rightresultleft{
-background-color: cornsilk;
-/* border: 1px black solid; */
+/* background-color: rgb(230, 184, 4); */
+border: 1px black solid;
 padding: 5px;
 text-decoration: none;
 }
 #rightresult{
     display:flex;
     margin-right: 5px;
+    /* background-color: violet; */
 }
 #select{
     border: 0px;
+    display: inline;
 }
 #first2{
     display:flex;
-    /* border: 1px solid brown; */
+    border: 1px solid rgb(160, 137, 3);
     margin-bottom: 15px;
     margin-top: 4px;
 
@@ -197,7 +204,7 @@ text-decoration: none;
 #first2>div{
     display: flex;
     align-items: center;
-    /* border: 1px solid brown; */
+    border: 1px solid gray;
     padding: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -211,6 +218,9 @@ text-decoration: none;
 #clear{
     /* border:0px; */
     background-color: rgb(18, 222, 222);
+}
+#first2>#filt{
+    border: none;
 }
 /* #foot{
     position: sticky;

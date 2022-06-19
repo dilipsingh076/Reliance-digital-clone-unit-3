@@ -7,10 +7,10 @@ function navbar(){
         <li class="navserviceListitem">Contact us</li>
     </ul>
     <div id="navheader">
-      <div id="logo_image_div"> <img id="logo_image" src="	https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="reliance digital logo"></div>
+      <div id="logo_image_div"> <a href="../homepage/index.html"><img id="logo_image" src="	https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="reliance digital logo"></a></div>
       <div id="searchbar"><input type="text"  placeholder="Find your favorite products"> <button type="submit" id="searchbutton"><img id="searchpng" src="https://www.freepnglogos.com/uploads/search-png/search-icon-clip-art-clkerm-vector-clip-art-online-22.png" alt=""></button></div>
       <div class="navheader_right_div"><span>Select your location</span></div>
-      <a href="../cart/index.html"><div class="navheader_right_div"><p>Cart</p></div></a>  
+      <div class="navheader_right_div"><a href="./cart.html"><p>Cart</p></a></div>  
       <a href="../login/ragister.html"><div class="navheader_right_div"><p>Login</p></div></a> 
     </div>
   </header>

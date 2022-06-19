@@ -174,7 +174,8 @@
                 <input type="text" placeholder="PIN Code" id="pinCode" /><br>
                 <p id="pinalert">Please enter a valid pincode</p>
                 <div>
-                   <button id="addtoCart">ADD TO CART</button><button id="buyNow">BUY NOW</button>
+                   <button id="addtoCart">ADD TO CART</button>
+                   <a href="../checkout/checkout.html"><button id="buyNow">BUY NOW</button></a>
                 </div>
                 
               </div>
@@ -788,31 +789,29 @@
   document.querySelector("#navbar").innerHTML =nav
 
   import footer from "../components/footer.js"
-  document.querySelector("#foot").innerHTML = footer
+  document.querySelector("#foot").innerHTML = footer()
 
 
-  function openImg(){
-    var image = document.getElementById('getsrc');
-    var source = image.src;
-    window.open(source);
-}
+let arr=JSON.parse(localStorage.getItem("cart"))||[]
+let cart=document.getElementById("addtoCart")
+cart.addEventListener("click",function(){
+  let x=document.getElementById("myimage").src
+  console.log("fdijnvsdvik")
+  let image=x;
+  // let name=document.getElementById("name").innerHTML;
+  let name=document.getElementById("deviceName").innerHTML;
+  console.log(image,name)
+  let price="53,000.00";
+  let obj={
+    image:image,
+    name:name,
+    price:price
+  }
+  arr.push(obj)
+  localStorage.setItem("cart",JSON.stringify(arr))
+
+})
 
 
-document.getElementById("buyNow").addEventListener("click", function() {
-    
-    let pin = document.querySelector("#pinCode").value
-    
-    
-    if(pin.length === 6){
-      let pincheck = document.getElementById('pinalert')
-      pincheck.style.display = 'none'
-      window.location.href = "cart.html"
-    }
-    else{
-      let pincheck = document.getElementById('pinalert')
-      pincheck.style.display = 'block'
-      
-    }
-  });
 
 </script>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliance Digital Cart</title>
+    <link rel="stylesheet" href="../style/footer/footer.css">
+    <link rel="stylesheet" href="../style/navbar/navbar.css">
+    <style>
+        #cart {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #f5f5f5;
+        }
+        #chkt {
+            background-color: #e42529;
+            color: white;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #checkout {
+            width: 400px;
+            border: 1px solid black;
+        }
+
+        p {
+            color: #818b96;
+        }
+      #container{
+        height: auto;
+        width: 100%;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .image{
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid red; */
+        margin-bottom: -5px;
+      }
+      .card{
+        height: 100%;
+        width: 100%;
+        border: 1px solid rgb(0, 255, 153);
+        display: grid;
+        grid-template-rows:60% 20% 20%;
+      }
+      .name{
+        margin-top: 5px;
+      }
+      .price{
+        margin-top: 5px;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="container"></div>
+
+    <div id="cart">
+
+
+        <div id="items">
+            <button>Remove</button>
+            <button>Move to wishlist</button>
+        </div>
+
+        <div id="checkout">
+            <div id="btn">
+                <button id="chkt">CHECKOUT</button>
+
+                <div id="details">
+                    <input type="text" id="Coupon" placeholder="Coupon Code">
+                    <button>Apply</button>
+                    <h4>PRICE DETAILS</h4>
+                    <!-- <h4 id="totamount">AMOUNT PAYABLE</h4> -->
+                    <p>Delivery Charges</p>
+                    <p>Free</p>
+                    <hr>
+                    <h4 id="totamount">AMOUNT PAYABLE</h4>
+                </div>
+                <div>
+                    <p>Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="foot">
+
+    </div>
+</body>
+
+</html>
+
+<script type="module">
+import navbar from "../components/navbar.js"
+  let nav = navbar()
+  document.querySelector("#navbar").innerHTML =nav
+
+
+
+ import footer from "../components/footer.js"
+  document.querySelector("#foot").innerHTML = footer()
+
+
+
+
+
+    var data = JSON.parse(localStorage.getItem('cart'));
+    // console.log('card_data: ', card_data);
+    console.log(data)
+    let container = document.getElementById('container');
+
+    let display = () => {
+        data.forEach(ele => {
+            let card = document.createElement('div');
+            card.setAttribute('class', 'card');
+            let image = document.createElement('img');
+            image.src = ele.image;
+            image.setAttribute('class', 'image');
+            let name = document.createElement('h4');
+            name.innerHTML = ele.name;
+            name.setAttribute('class', 'name');
+            let price = document.createElement('h4');
+            price.innerHTML = ele.price;
+            price.setAttribute('class', 'price');
+            card.append(image, name, price);
+            container.append(card);
+
+        });
+    }
+    display();
+    let checkout=document.getElementById("chkt");
+    checkout.addEventListener("click",function(){
+        window.location.href="../checkout/checkout.html";
+    });
+</script>
