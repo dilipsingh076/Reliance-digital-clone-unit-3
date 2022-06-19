@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- this is for navbar  -->
+<link rel="stylesheet" href="../style/navbar/navbar.css">
+<!-- this is footer  -->
+<link rel="stylesheet" href="../style/footer/footer.css">
 </head>
 
 <body>
@@ -115,10 +120,18 @@
         </div>
     </div>
     <!-- ==-----------------------------------== -->
-    <div id="footer">
-
-    </div>
+<div id="foot"></div>
+    
 </body>
 
 </html>
 <script src="index.js"></script>
+<script type="module">
+      import navbar from "../components/navbar.js"
+  let nav = navbar()
+  document.querySelector("#navbar").innerHTML =nav
+
+  import footer from "../components/footer.js"
+  document.querySelector("#foot").innerHTML = footer
+    
+</script>

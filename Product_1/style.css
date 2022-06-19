@@ -212,3 +212,11 @@ text-decoration: none;
     /* border:0px; */
     background-color: rgb(18, 222, 222);
 }
+/* #foot{
+    position: sticky;
+    bottom: 0;
+} */
+
+#footer{
+    border: 3px solid red;
+}
