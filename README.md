@@ -22,7 +22,7 @@ This is a clone of Reliance Digital, A Indian consumer electronics retailer. It 
 * iPhone 11
 
 ---------------------------
-# Gelary
+# Gallery
 * Home Page 
 <img src="https://i.imgur.com/8sv44GN.png"  alt="image" />
 
