@@ -41,4 +41,4 @@ This is a clone of Reliance Digital, A Indian consumer electronics retailer. It 
  
 * HTML
 * CSS
-* Javascript
+* Javascript 
